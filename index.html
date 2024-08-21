@@ -19,13 +19,13 @@
             extend: {
               colors: {
                 "primary-bg" : "rgb(255, 255, 255)",
-                "banner-bg-grad-1": "rgb(226, 224, 224, 0.2)",
+                "banner-bg-grad-1": "rgb(226, 224, 224, 0)",
                 "banner-bg-grad-2": "rgb(224, 222, 222)",
                 "section-bg" : "rgb(244, 244, 244)",
                 "para-color-1" : "rgb(73, 73, 73)",
                 "para-color-2" : "rgb(115, 115, 115)",
                 "btn-bg-dark" : "rgb(171, 239, 95)",
-                "btn-bg-light" : "rgba(171, 239, 95, 0.2)",
+                "btn-bg-light" : "rgba(224, 247, 197,0.9)",
                 "text-color" : "rgb(33, 33, 33)"
 
               }
@@ -45,7 +45,7 @@
 <body class="font-monrope">
     <!-------- header section here ------------------------------------------->
     <header class="bg- px-5 py-8 mb-20 bg-gradient-to-t from-banner-bg-grad-1 to-banner-bg-grad-2 md:px-20">
-       <div class="">
+       <div class="flex flex-col gap-14">
         <!---- nav-bar ----------------------->
         <nav class="">
             <div class="flex justify-between items-center">
@@ -57,11 +57,11 @@
                 </div>
                 <div class="hidden md:flex">
                     <ul class="flex justify-between items-center gap-12">
-                        <li class=""><a href="#" class="text-base text-para-color-1 hover:text-black hover:font-bold">Home</a></li>
-                        <li class=""><a href="#" class="text-base text-para-color-1 hover:text-black hover:font-bold">Services</a></li>
-                        <li class=""><a href="#" class="text-base text-para-color-1 hover:text-black hover:font-bold">Portfolio</a></li>
-                        <li class=""><a href="#" class="text-base text-para-color-1 hover:text-black hover:font-bold">Blogs</a></li>
-                        <li class=""><a href="#" class="text-base text-para-color-1 hover:text-black hover:font-bold">Contact Us</a></li>
+                        <li class=""><a href="#" class="text-base text-para-color-2 hover:text-black hover:font-bold">Home</a></li>
+                        <li class=""><a href="#" class="text-base text-para-color-2 hover:text-black hover:font-bold">Services</a></li>
+                        <li class=""><a href="#" class="text-base text-para-color-2 hover:text-black hover:font-bold">Portfolio</a></li>
+                        <li class=""><a href="#" class="text-base text-para-color-2 hover:text-black hover:font-bold">Blogs</a></li>
+                        <li class=""><a href="#" class="text-base text-para-color-2 hover:text-black hover:font-bold">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="hidden md:flex justify-center items-center gap-5">
@@ -85,8 +85,22 @@
             </div>
         </nav>
         <!---- banner ----------------------->
-        <div class="">
-
+        <div class="flex flex-col justify-center items-center">
+          <div class="mb-6">
+            <img src="./assets/banner.png" alt="">
+          </div>
+          <div class="flex flex-col justify-center items-center mb-8">
+            <h1 class="text-4xl text-center w-full font-extrabold mb-10 md:text-6xl md:w-4/5">A barn house of this design has a striking appearance</h1>
+            <p class="text-center text-base text-para-color-1 font-medium w-full md:w-4/5">Barn house' architecture can be presumed as a style or trend in contemporary architecture. The term 'barn-house' refers to a house that architecturally refers to barn with a simple, longitudinal form with pitched roof</p>
+          </div>
+          <div class="">
+            <button class=" flex w-52 h-14 bg-btn-bg-light justify-center items-center rounded-full gap-2 text-xl font-bold">
+                View Details
+                <div class="w-8 h-8 rounded-full bg-btn-bg-dark flex justify-center items-center text-base">
+                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                </div>
+            </button>
+          </div>
         </div>
        </div>
     </header>
