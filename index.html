@@ -30,7 +30,8 @@
                 "card-1" : "rgb(231, 193, 211)",
                 "card-2" : "rgb(239, 218, 110)",
                 "card-3" : "rgb(164, 218, 195)",
-                "card-4" : "rgb(119, 170, 234)"
+                "card-4" : "rgb(119, 170, 234)",
+                "footer-bg" : "rgb(28, 28, 28)"
 
               }
             }
@@ -55,7 +56,7 @@
             <div class="flex justify-between items-center">
                 <div class="">
                     <div class="flex justify-center items-center gap-2">
-                        <div class="-rotate-45 w-10 h-10 rounded-full bg-btn-bg-dark flex justify-center items-center"><i class="fa-solid fa-arrow-right"></i></div>
+                        <div class=" w-10 h-10 rounded-full bg-btn-bg-dark flex justify-center items-center"><i class="fa-solid fa-arrow-right-long -rotate-45"></i></div>
                         <h1 class="text-text-color text-3xl font-extrabold">Rinterio</h1>
                     </div>
                 </div>
@@ -74,8 +75,8 @@
                     <a href="#" class="">
                         <button class=" flex justify-center items-center gap-2 w-56 h-14 rounded-full bg-btn-bg-dark text-text-color text-xl font-extrabold">
                             Book Consult
-                            <div class="w-8 h-8 rounded-full bg-black text-white flex justify-center items-center font-semibold text-base">
-                                <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                            <div class="w-8 h-8 rounded-full bg-black flex justify-center items-center font-semibold text-base">
+                              <i class="fa-solid fa-arrow-right-long -rotate-45 text-white"></i>
                             </div>
     
                         </button>
@@ -101,7 +102,7 @@
             <button class=" flex w-full h-14 bg-btn-bg-light justify-center items-center rounded-full gap-2 text-xl font-bold lg:w-52">
               <span>View Details</span>
               <div class="w-8 h-8 rounded-full bg-btn-bg-dark flex justify-center items-center text-base">
-                  <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                <i class="fa-solid fa-arrow-right-long -rotate-45"></i>
               </div>
             </button>
           </div>
@@ -460,8 +461,8 @@
           </div>
         </section>
         <!---- connect section ------------------->
-        <section class="bg-[url(./assets/bg.jpg)] bg-no-repeat bg-center bg-cover px-5 py-8 mb-12 lg:px-24 lg:mb-24">
-          <div class="flex flex-col justify-center items-center">
+        <section class="bg-[url(./assets/bg.jpg)] bg-no-repeat bg-center bg-cover px-5 py-8 mb-4 lg:px-24">
+          <div class="flex flex-col justify-center items-center mb-10 lg:mb-24">
             <!-- button -->
             <div class="mb-6">
               <button class="flex justify-center items-center">
@@ -495,7 +496,7 @@
                       <button class=" flex w-full h-14 bg-btn-bg-dark justify-center items-center rounded-full gap-2 ">
                         <span class="text-xl font-extrabold">Send Mail</span>
                         <div class="w-8 h-8 rounded-full bg-black flex justify-center items-center text-base">
-                            <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
+                          <i class="fa-solid fa-arrow-right-long -rotate-45 text-white"></i>
                         </div>
                       </button>
                     </div>
@@ -507,8 +508,36 @@
 
     </main>
     <!-------- footer section here ------------------------------------------->
-    <footer class="">
+    <footer class="bg-footer-bg text-white px-5 py-8 lg:px-24">
+      <div class="px-8 py-16 lg:py-20 ">
+        <div class="flex flex-col justify-center items-center">
 
+          <div class="flex justify-center items-center gap-2 mb-5">
+              <div class="w-10 h-10 rounded-full bg-btn-bg-dark flex justify-center items-center"><i class="fa-solid fa-arrow-right-long -rotate-45 text-black"></i></div>
+              <h1 class="text-white text-3xl font-extrabold">Rinterio</h1>
+          </div>
+
+          <p class="text-base text-para-color-2 text-center font-medium w-full lg:w-3/5 mb-8 lg:mb-12">construction often refers to a concise overview of a specific construction project. This summary typically includes vital details such as the project's name, location, scope, objectives, timeline, budget, and significant milestones.</p>
+
+          <div class="mb-8 lg:mb-12">
+            <ul class="flex flex-col gap-8 justify-center items-center lg:gap-32 lg:flex-row ">
+              <li class=""><a href="" class="">Home</a></li>
+              <li class=""><a href="" class="">Services</a></li>
+              <li class=""><a href="" class="">Portfolio</a></li>
+              <li class=""><a href="" class="">Blogs</a></li>
+              <li class=""><a href="" class="">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <button class=" flex justify-center items-center gap-2 w-full  h-14 lg:w-56 rounded-full bg-btn-bg-dark text-text-color text-xl font-extrabold">
+            Book Consult
+            <div class="w-8 h-8 rounded-full bg-black flex justify-center items-center font-semibold text-base">
+              <i class="fa-solid fa-arrow-right-long -rotate-45 text-white"></i>
+            </div>
+
+          </button>
+      </div>
+      </div>
 
     </footer>
 
